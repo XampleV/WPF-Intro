@@ -20,7 +20,10 @@
                 <Button Margin="10 0 0 0" Grid.Column="2" Content="Refresh"/>
 
             </Grid>
+            <TextBlock Text="Pulse Properties" FontWeight="Bold" Margin="0 10"/>
             
+            <!-- im too tired.. description-->
+
         </StackPanel>
     </Border>
 </Window>
