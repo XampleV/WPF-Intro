@@ -39,6 +39,12 @@
                     <TextBox IsReadOnly="True" Background="#eee" Padding="2" />
                 </StackPanel>
                 
+                <!-- Why do people have to make youtube videos an hour long when you can just cut straight to the point, it's easier. (revison) -->
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Revision" />
+                    <TextBox IsReadOnly="True" Background="#eee" Padding="2" />
+                </StackPanel>
+
             </Grid>
         </StackPanel>
     </Border>
