@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Intro"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="420">
     <Border Padding="10">
         <StackPanel>
             <!-- button goes here... -->
@@ -87,6 +87,33 @@
                 </StackPanel>
 
             </Grid>
+            <TextBlock Text="Length" />
+            <TextBox x:Name="LengthText" Padding="2" />
+
+            <TextBlock Text="Mass" />
+            <TextBox x:Name="MassText" IsReadOnly="True" Background="#eee"  Padding="2" />
+            <TextBlock Text="Finish" />
+            <ComboBox SelectionChanged="FinishDropdown_SelectionChanged" x:Name="FinishDropdown" SelectedIndex="0" Padding="2">
+                <ComboBoxItem>Painted</ComboBoxItem>
+                <ComboBoxItem>Not Painted</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock Text="Purchase Information" />
+            <ComboBox SelectedIndex="0" Padding="2">
+                <ComboBoxItem>Rubber</ComboBoxItem>
+                <ComboBoxItem>Not Rubber</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock Text="Supplier Name" />
+            <TextBox x:Name="SupplierNameText" TextChanged="SupplierNameText_TextChanged" Padding="2" />
+
+            <TextBlock Text="Supplier Code" />
+            <TextBox Padding="2" />
+
+            <TextBlock Text="Additional Info" FontWeight="Bold" Margin="0 10" />
+
+            <TextBlock Text="Note" />
+            <TextBox x:Name="NoteText" Padding="2" />
         </StackPanel>
     </Border>
 </Window>
