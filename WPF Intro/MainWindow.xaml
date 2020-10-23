@@ -25,6 +25,21 @@
             <!-- im too tired.. description-->
             <TextBlock Text="Description"/>
             <TextBlock x:Name="DescriptionText" Padding="2"/>
+            
+            <!-- Status and revision-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- too late for this. status..-->
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <TextBlock Text="Status" />
+                    <TextBox IsReadOnly="True" Background="#eee" Padding="2" />
+                </StackPanel>
+                
+            </Grid>
         </StackPanel>
     </Border>
 </Window>
