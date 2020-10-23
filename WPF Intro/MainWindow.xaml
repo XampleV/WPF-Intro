@@ -62,7 +62,31 @@
 
             <!-- Work cenrres -->
             <TextBlock Text="Work Centres" Margin="0 0 0 10" />
+            <!-- Checkboxes -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
+
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <CheckBox Checked="Checkbox_Checked" x:Name="WeldCheckbox" Content="i" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="AssemblyCheckbox" Content="dont" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="PlasmaCheckbox" Content="know.." />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="LaserCheckbox" Content="why" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="PurchaseCheckbox" Content="are" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <CheckBox Checked="Checkbox_Checked" x:Name="LatheCheckbox" Content="there" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="DrillCheckbox" Content="so" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="FoldCheckbox" Content="many" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="RollCheckbox" Content="boxes" />
+                    <CheckBox Checked="Checkbox_Checked" x:Name="SawCheckbox" Content="my guy" />
+                </StackPanel>
+
+            </Grid>
         </StackPanel>
     </Border>
 </Window>
