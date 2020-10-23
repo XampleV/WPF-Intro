@@ -23,7 +23,8 @@
             <TextBlock Text="Pulse Properties" FontWeight="Bold" Margin="0 10"/>
             
             <!-- im too tired.. description-->
-
+            <TextBlock Text="Description"/>
+            <TextBlock x:Name="DescriptionText" Padding="2"/>
         </StackPanel>
     </Border>
 </Window>
